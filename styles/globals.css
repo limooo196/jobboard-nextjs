@@ -1,9 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Loto";
+  src: url(../public/fonts/Lato/Lato-Regular.ttf);
+
+}
+*{
+  margin:0px;
+  padding:0px;
+  margin-left:0px;
+  padding-left:0px;
+  padding-top:0px;
+ 
+  }
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+ font-family: 'Loto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 a {
@@ -17,10 +37,20 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+
   }
   body {
-    color: white;
-    background: black;
+
   }
+}
+
+.header-bg{
+  
+  background-color: #473d3d;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-size: cover;
+background-repeat: no-repeat;
+height: 45vh;
 }
